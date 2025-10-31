@@ -33,9 +33,7 @@ def step(x):
 # Your code here:
 # -----------------------------------------------
 def ReLu(arr, cutoff=0):
-    arr = numpy.array(arr)
-    arr[arr < cutoff] = cutoff
-    return arr
+    return numpy.maximum(arr, cutoff)
 
 
 # -----------------------------------------------
